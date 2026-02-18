@@ -29,7 +29,9 @@ const HeroSection = () => {
             <strong className="text-primary-foreground">sem dietas extremas e sem sofrimento.</strong>
           </p>
           <motion.a
-            href="#cta"
+            href="https://pay.kiwify.com.br/zBff30U"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-3 px-10 py-5 bg-accent text-accent-foreground font-heading font-bold text-lg rounded-full animate-pulse-glow transition-all"

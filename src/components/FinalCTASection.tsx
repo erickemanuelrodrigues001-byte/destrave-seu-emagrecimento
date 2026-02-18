@@ -22,7 +22,9 @@ const FinalCTASection = () => {
             Milhares já desbloquearam seus resultados.
           </p>
           <motion.a
-            href="#"
+            href="https://pay.kiwify.com.br/zBff30U"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-3 px-12 py-6 bg-accent text-accent-foreground font-heading font-bold text-xl rounded-full animate-pulse-glow transition-all"
