@@ -1,3 +1,4 @@
+import PurchaseNotification from "@/components/PurchaseNotification";
 import HeroSection from "@/components/HeroSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import TargetSection from "@/components/TargetSection";
@@ -9,6 +10,7 @@ import FinalCTASection from "@/components/FinalCTASection";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PurchaseNotification />
       <HeroSection />
       <BenefitsSection />
       <TargetSection />
