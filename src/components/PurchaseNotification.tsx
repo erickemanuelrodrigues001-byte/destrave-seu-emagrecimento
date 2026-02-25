@@ -31,31 +31,26 @@ const PurchaseNotification = () => {
   const [timeAgo, setTimeAgo] = useState(getTimeAgo());
 
   useEffect(() => {
-    const showFirst = setTimeout(() => {
+    // Show first notification after 3 seconds
+    const firstShow = setTimeout(() => {
       setVisible(true);
     }, 3000);
 
-    return () => clearTimeout(showFirst);
-  }, []);
-
-  useEffect(() => {
-    if (!visible) return;
-
-    const hideTimer = setTimeout(() => {
+    // Then every 10 seconds, cycle to next person
+    const interval = setInterval(() => {
       setVisible(false);
-    }, 6000);
-
-    const nextTimer = setTimeout(() => {
-      setCurrent((prev) => (prev + 1) % purchases.length);
-      setTimeAgo(getTimeAgo());
-      setVisible(true);
+      setTimeout(() => {
+        setCurrent((prev) => (prev + 1) % purchases.length);
+        setTimeAgo(getTimeAgo());
+        setVisible(true);
+      }, 800); // brief pause for exit animation
     }, 10000);
 
     return () => {
-      clearTimeout(hideTimer);
-      clearTimeout(nextTimer);
+      clearTimeout(firstShow);
+      clearInterval(interval);
     };
-  }, [visible, current]);
+  }, []);
 
   const purchase = purchases[current];
 
