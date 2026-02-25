@@ -23,6 +23,15 @@ const HeroSection = () => {
             Destrave seu Emagrecimento e Perca Peso de Forma{" "}
             <span className="text-accent">Saudável e Sustentável</span>
           </h1>
+          <div className="mb-8 max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl border border-primary-foreground/10">
+            <iframe
+              src="https://www.youtube.com/embed/lEqhFb84P_0"
+              title="Destrave seu Emagrecimento"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto font-body leading-relaxed">
             Um método simples, prático e aplicável ao seu dia a dia para quem
             quer emagrecer com saúde e manter os resultados a longo prazo —{" "}
