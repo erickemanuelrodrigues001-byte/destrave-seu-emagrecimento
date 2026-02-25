@@ -33,7 +33,7 @@ const PurchaseNotification = () => {
   useEffect(() => {
     const showFirst = setTimeout(() => {
       setVisible(true);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(showFirst);
   }, []);
@@ -43,13 +43,13 @@ const PurchaseNotification = () => {
 
     const hideTimer = setTimeout(() => {
       setVisible(false);
-    }, 4000);
+    }, 6000);
 
     const nextTimer = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % purchases.length);
       setTimeAgo(getTimeAgo());
       setVisible(true);
-    }, 8000 + Math.random() * 7000);
+    }, 10000);
 
     return () => {
       clearTimeout(hideTimer);
