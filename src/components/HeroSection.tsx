@@ -25,7 +25,7 @@ const HeroSection = () => {
           </h1>
           <div className="mb-8 max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl border border-primary-foreground/10">
             <iframe
-              src="https://www.youtube.com/embed/lEqhFb84P_0"
+              src="https://www.youtube.com/embed/lEqhFb84P_0?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=1&iv_load_policy=3"
               title="Destrave seu Emagrecimento"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
